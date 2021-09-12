@@ -31,7 +31,7 @@ public class ProjectSecurityConfig extends WebSecurityConfigurerAdapter {
 			@Override
 			public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
 				CorsConfiguration config = new CorsConfiguration();
-				config.setAllowedOrigins(Collections.singletonList("http://easybank-ui.s3-website-us-east-1.amazonaws.com"));
+				config.setAllowedOrigins(Collections.singletonList("*"));
 				config.setAllowedMethods(Collections.singletonList("*"));
 				config.setAllowCredentials(true);
 				config.setAllowedHeaders(Collections.singletonList("*"));
